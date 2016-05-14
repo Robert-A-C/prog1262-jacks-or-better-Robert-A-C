@@ -1,41 +1,24 @@
+///////////////////////////////////////////////////////////////////////
+// File: Source.cpp
+// Author: Robert Carll
+// This assignment represents my own work and is in accordance with the College Academic Policy
+// Copyright (c) 2015 All Right Reserved by Robert Carll
+// Contributors:
+// Description:
+// Date: May 2016
+// Revisions:
+//////////////////////////////////////////////////////////////////////
+
 #include "Card.h"
 #include "Deck.h"
 #include "Hand.h"
 #include <vector>
 #include <iostream>
+#include "VideoPoker.h"
 
 
 
 int main() {
-
-
-
-
-	Deck deck;
-	
-	deck.shuffle();
-
-	
-	Hand hand1 (deck);
-	
-
-	
-	std::cout << hand1 << std::endl;
-	if(hand1.isPair())
-		std::cout << "You have a pair" << std::endl;
-	if(hand1.isThreeOfaKind())
-		std::cout << "You have a three of a kind" << std::endl;
-	if(hand1.isFourOfaKind())
-		std::cout << "You have a four of a kind" << std::endl;
-	if(hand1.isFullHouse())
-		std::cout << "You have a fullhouse" << std::endl;
-	if(hand1.isTwoPair())
-		std::cout << "You have two pair" << std::endl;
-	if(hand1.isFlush())
-		std::cout << "You have a flush" << std::endl;
-	if (hand1.isStraight())
-		std::cout << "a straight";
-	
-
-	system("pause");
+	VideoPoker JacksOrBetter;
+	JacksOrBetter.play();
 }
